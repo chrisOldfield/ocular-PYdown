@@ -14,7 +14,6 @@ if [ -z "$(wsl.exe -l | grep Ubuntu)" ]; then
     echo "Ubuntu is not installed. Please install Ubuntu from the Microsoft Store."
     exit 1
 fi
-
 # Update Ubuntu packages
 wsl.exe --distribution Ubuntu --exec "sudo apt update && sudo apt upgrade -y"
 
